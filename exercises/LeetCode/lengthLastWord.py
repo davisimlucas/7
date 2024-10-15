@@ -1,7 +1,7 @@
 class Solution:
     def lengthLastWord(self, s: str) -> int:
         endWord = len(s) - 1
-
+        # str em py são iteráveis ==> tratar como um array 
         while s[endWord] == ' ':
             endWord -= 1
 
