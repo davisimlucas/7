@@ -11,9 +11,8 @@ class Solution:
             while prefix != s[0:prefixLen]: 
                 # enq for True, diminuir o tamanho palavra que tiver comparando
                 prefixLen -= 1
-                # se terminar a palavre prefix ==> prefixLen = 0, retornar ""
                 if prefixLen == 0:
                     return ""
-                #prefix assume o tamanho novo e volta no looping 
+             
                 prefix = prefix[0:prefixLen]
         return prefix
